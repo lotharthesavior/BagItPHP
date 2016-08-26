@@ -249,7 +249,7 @@ function readLines($fileName, $fileEncoding)
  */
 function writeFileText($fileName, $fileEncoding, $data)
 {
-    file_put_contents($fileName, iconv('UTF-8', $fileEncoding, $data));
+    file_put_contents($fileName, $data);
 }
 
 /**
