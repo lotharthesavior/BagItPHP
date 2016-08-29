@@ -390,9 +390,9 @@ class BagIt
             }
         }
 
-        if ($this->extended || count($this->bagInfoData) > 0) {
-            $this->_writeBagInfo();
-        }
+        // if ($this->extended || count($this->bagInfoData) > 0) {
+        //     $this->_writeBagInfo();
+        // }
 
         // Update the manifests.
         $this->manifest->update(rls($this->getDataDirectory()));
@@ -627,8 +627,8 @@ class BagIt
                     );
                 }
 
-                $this->bagInfoFile = "{$this->bagDirectory}/bag-info.txt";
-                $this->_readBagInfo();
+                // $this->bagInfoFile = "{$this->bagDirectory}/bag-info.txt";
+                // $this->_readBagInfo();
             }
         }
     }
