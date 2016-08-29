@@ -216,7 +216,7 @@ function findFirstExisting($fileNames, $default=null)
  */
 function readFileText($fileName, $fileEncoding)
 {
-    $data = iconv($fileEncoding, 'UTF-8', file_get_contents($fileName));
+    $data = file_get_contents($fileName);
     return $data;
 }
 
