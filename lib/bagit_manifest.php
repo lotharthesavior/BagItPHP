@@ -209,7 +209,7 @@ class BagItManifest
         $output = array();
 
         foreach ($this->data as $path => $hash) {
-            array_push($output, "$hash $path\n");
+            array_push($output, "$hash $path\r\n");
         }
 
         writeFileText(

@@ -138,7 +138,7 @@ class BagItFetch
 
         foreach ($this->data as $fetch) {
             $data = array($fetch['url'], $fetch['length'], $fetch['filename']);
-            array_push($lines, join(' ', $data) . "\n");
+            array_push($lines, join(' ', $data) . "\r\n");
         }
 
         if (count($lines) == 0) {

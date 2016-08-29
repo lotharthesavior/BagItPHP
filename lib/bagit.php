@@ -660,8 +660,8 @@ class BagIt
         $major = $this->bagVersion['major'];
         $minor = $this->bagVersion['minor'];
         $bagItData
-            = "BagIt-Version: $major.$minor\n" .
-              "Tag-File-Character-Encoding: {$this->tagFileEncoding}\n";
+            = "BagIt-Version: $major.$minor\r\n" .
+              "Tag-File-Character-Encoding: {$this->tagFileEncoding}\r\n";
         writeFileText($this->bagitFile, $this->tagFileEncoding, $bagItData);
 
         $this->_createExtendedBag();
@@ -725,10 +725,10 @@ class BagIt
             foreach ($this->bagInfoData as $label => $value) {
                 if (is_array($value)) {
                     foreach ($value as $v) {
-                        $lines[] = "$label: $v\n";
+                        $lines[] = "$label: $v\r\n";
                     }
                 } else {
-                    $lines[] = "$label: $value\n";
+                    $lines[] = "$label: $value\r\n";
                 }
             }
         }
