@@ -400,7 +400,7 @@ class BagIt
             $bagdir = $this->bagDirectory;
             $tagFiles = array(
                 "$bagdir/bagit.txt",
-                "$bagdir/bag-info.txt",
+                // "$bagdir/bag-info.txt",
                 $this->fetch->fileName,
                 $this->manifest->getFileName()
             );
