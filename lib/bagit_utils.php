@@ -262,11 +262,12 @@ function writeFileText($fileName, $fileEncoding, $data)
 function BagIt_sanitizeFileName($filename)
 {
     // White space => underscores.
-    $filename = preg_replace('/\s+/', '_', $filename);
+    // $filename = preg_replace('/\s+/', '_', $filename);
 
     // Remove some characters.
     $filename = preg_replace(
-        '/\.{2}|[~\^@!#%&\*\/:\'?\"<>\|]/',
+        // '/\.{2}|[~\^@!#%&\*\/:\'?\"<>\|]/',
+        '/\.{2}|%\/\'\"]/',
         '',
         $filename
     );
