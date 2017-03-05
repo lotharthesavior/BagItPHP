@@ -12,5 +12,10 @@
         "sebastian/phpcpd": "*",
         "squizlabs/php_codesniffer": "2.*",
         "mayflower/php-codebrowser": "~1.1"
-    }
+    },
+    "autoload": {
+        "psr-4": {
+            "Bagit\\": "lib/"
+        }
+    },
 }
