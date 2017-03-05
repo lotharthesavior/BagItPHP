@@ -22,7 +22,7 @@ package repository. Your `composer.json` will need to look something like this:
 {
   "repositories": [
     {
-      "url": "http://git.minisisinc.com:8083/Marina.git",
+      "url": "https://github.com/lotharthesavior/BagItPHP.git",
       "type": "vcs"
     }
   ],
