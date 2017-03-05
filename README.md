@@ -20,8 +20,14 @@ package repository. Your `composer.json` will need to look something like this:
 
 ```json
 {
+  "repositories": [
+    {
+      "url": "http://git.minisisinc.com:8083/Marina.git",
+      "type": "vcs"
+    }
+  ],
   "require": {
-    "scholarslab/bagit": "~0.2"
+    "lotharthesavior/bagit": "~0.2"
   }
 }
 ```
@@ -30,7 +36,7 @@ package repository. Your `composer.json` will need to look something like this:
 
 
 ```bash
-% git clone git://github.com/scholarslab/BagItPHP.git
+% git clone git://github.com/lotharthesavior/BagItPHP.git
 ```
 
 ## Dependencies
@@ -135,7 +141,7 @@ if (count($bag->getBagErrors()) == 0) {
 We are relying on the [GitHub issues tracker][issues] linked from the above for
 feedback. File bugs or other issues [here][issues].
 
-[issues]: http://github.com/scholarslab/BagItPHP/issues
+[issues]: http://github.com/lotharthesavior/BagItPHP/issues
 
 ## Tests
 
