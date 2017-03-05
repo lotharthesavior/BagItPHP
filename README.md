@@ -37,7 +37,7 @@ package repository. Your `composer.json` will need to look something like this:
 
 You'll need to have these installed to use this:
 
- * Archive\_Tar (http://pear.php.net/package/Archive\_Tar)
+ * Archive_Tar (http://pear.php.net/package/Archive_Tar)
 
 ## Example: Creating a bag
 
