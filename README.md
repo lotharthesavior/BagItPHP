@@ -27,7 +27,7 @@ package repository. Your `composer.json` will need to look something like this:
     }
   ],
   "require": {
-    "lotharthesavior/bagit": "~0.2"
+    "lotharthesavior/bagit": "~0.3.1"
   }
 }
 ```
