@@ -28,10 +28,12 @@
  *
  */
 
+namespace Lotharthesavior\BagItPHP;
 
 require_once 'Archive/Tar.php';
-require_once 'bagit_fetch.php';
-require_once 'bagit_manifest.php';
+
+use BagItFetch;
+use BagItManifest;
 require_once 'bagit_utils.php';
 
 

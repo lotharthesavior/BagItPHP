@@ -28,6 +28,8 @@
  *
  */
 
+namespace Lotharthesavior\BagItPHP;
+
 /**
  * This is a utility class for managing manifest files.
  *

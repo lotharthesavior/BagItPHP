@@ -28,8 +28,6 @@
  *
  */
 
-
-
 /**
  * This filters an array by items that match a regex.
  *
