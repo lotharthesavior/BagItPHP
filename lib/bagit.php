@@ -31,9 +31,8 @@
 namespace Lotharthesavior\BagItPHP;
 
 require_once 'Archive/Tar.php';
-
-use BagItFetch;
-use BagItManifest;
+require_once 'bagit_fetch.php';
+require_once 'bagit_manifest.php';
 require_once 'bagit_utils.php';
 
 
@@ -50,7 +49,7 @@ require_once 'bagit_utils.php';
  * @version    Release: <package_version>
  * @link       https://github.com/erochest/BagItPHP
  */
-class BagItException extends Exception
+class BagItException extends \Exception
 {
 
 }
